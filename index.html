@@ -12,29 +12,39 @@
     <header class="header">
       <nav class="header__menu">
         <ul class="header__menu-list">
-          <a class="header__menu-link" href="#/">главная</a>
-          <a class="header__menu-link" href="#/">посмотреть лоты</a>
-          <a class="header__menu-link" href="#/">об аукционе</a>
+          <li><a class="header__menu-link" href="#/">главная</a></li>
+          <li><a class="header__menu-link" href="#/">посмотреть лоты  </a></li>
+          <li><a class="header__menu-link" href="#/">об аукционе</a></li>
         </ul>
       </nav>
 
-      <img class="logo" src="images/logo-black.svg" alt="Логотип" />
+      <div class=logo>
+        <img class="header__logo" src="images/logo-black.svg" alt="Логотип" />  
+      </div>
 
-      <address class="contacts">
+
+      <address class="header__contacts">
         <a class="contacts__phone" href="tel:+99995555555"> +9 999 555 5555 </a>
         <a class="contacts__email" href="mailto:info@sobaka.ge"> info@sobaka.ge</a>
-        <p class="contacts__address">наб. Принсенграхт 263- 265, Амстердам</p>
+        <p class="contacts__address">наб. Принсенграхт 263- </p><p>265, Амстердам</p>
       </address>
     </header>
 
     <main>
       <section class="cover">
         <div>
-          <img class="cover__img" src="./images/cover.jpg" alt="cover" />
+          <!--<img class="cover__img" src="./images/cover.jpg" alt="cover" /> -->
         </div>
-        <h1>Аукцион вещей, в которые никто не верил</h1>
-        <h2>ОНО<br /><span>ТЕБЕ</span><br />НАДО</h2>
-        <button class="cover__button">Сделать ставку</button>
+        <div class="cover__description">
+          <h1>Аукцион вещей, в которые никто не верил</h1>
+          <button class="cover__button">Сделать ставку</button>
+        </div>
+        <h2 class="cover__title">
+          <span>ОНО</span>
+          <span>ТЕБЕ</span>
+          <span>НАДО</span>
+        </h2>
+        
       </section>
 
       <section class="lots">
@@ -142,9 +152,9 @@
 
       <div class="menu__footer">
         <ul>
-          <a href="#/">главная</a>
-          <a href="#/">посмотреть лоты</a>
-          <a href="#/">об аукционе</a>
+          <li><a href="#/">главная</a></li>
+          <li><a href="#/">посмотреть лоты</a></li>
+          <li><a href="#/">об аукционе</a></li>
         </ul>
       </div>
 
