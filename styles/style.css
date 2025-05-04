@@ -1,369 +1,284 @@
 .header {
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
-    grid-template-areas: 
-    "menu logo contacts";
-    align-items: center;
-    padding: 92px 50px 92px 50px;
-
-
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  grid-template-areas: "menu logo contacts";
+  align-items: center;
+  padding: 92px 50px 92px 50px;
 }
 .header__menu {
-    grid-area: menu;
-    display: flex;
-    
+  grid-area: menu;
+  display: flex;
 }
 .header__menu-list {
-    display: flex;
-    gap: 30px;
-    list-style-type: circle;
-    margin-bottom: 7px;
-    margin-left: 3px;
+  display: flex;
+  gap: 30px;
+  list-style-type: circle;
+  margin-bottom: 7px;
+  margin-left: 3px;
+}
 
-}
-.header__menu-link {
-}
-.logo {
-    
-}
-.header__logo-link {
-}
 .header__logo {
-    grid-area: logo;
-    width: 148px;
-    height: 105px;
-
+  grid-area: logo;
+  width: 148px;
+  height: 105px;
 }
 .header__contacts {
-    grid-area: contacts;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
-    white-space: nowrap;
-    font-style: normal;
-    line-height: 24.4px;
-    margin-left: 187px;
+  grid-area: contacts;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  white-space: nowrap;
+  font-style: normal;
+  line-height: 24.4px;
+  margin-left: 187px;
 }
 
 .header__contacts a {
-    text-decoration: underline;
-    text-underline-offset: 4px;
-  } 
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
 
 .header__contacts p {
-    white-space: wrap;
-  } 
-.contacts__phone {
+  white-space: wrap;
 }
-.contacts__email {
-}
-.contacts__address {
-}
+
 .cover {
-    position: relative;
-    height: 757px;
-    background-image: url(../images/cover.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    z-index: 0;
-
-
+  position: relative;
+  height: 757px;
+  background-image: url(../images/cover.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 0;
 }
 .cover::before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-   
-    
-
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
-
 .cover__title {
-    display: flex;
-    flex-direction: column;
-    color: white;
-    font-size: 100px;
-    font-weight: 700;
-    padding: 165px 0px 105px 50px;
-    letter-spacing: 30px;
-    
-
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: 100px;
+  font-weight: 700;
+  padding: 165px 0px 105px 50px;
+  letter-spacing: 30px;
 }
 
 .cover__title p:nth-child(1) {
-    align-self: start;
-    
-    color:rgb(255, 255, 255);
-    
-    
-    
+  align-self: start;
+
+  color: rgb(255, 255, 255);
 }
 .cover__title p:nth-child(2) {
-    align-self: center;
-    padding-top: 17px;
-    margin-right: 15px;
-    
-    color:rgb(250, 250, 250);
-    
-    
-    
+  align-self: center;
+  padding-top: 17px;
+  margin-right: 15px;
+
+  color: rgb(250, 250, 250);
 }
 .cover__title p:nth-child(3) {
-    align-self: end;
-    margin-top: 19px;
-    margin-right: 18px;
-    
-    color:rgb(255, 255, 255);
-    
-    
-    
+  align-self: end;
+  margin-top: 19px;
+  margin-right: 18px;
+
+  color: rgb(255, 255, 255);
 }
 .cover__description {
-    
-    display: flex;
-    align-items:baseline;
-    justify-content: space-between;
-    text-transform: uppercase;
-    gap: 50px;
-    padding: 0px 50px 50px 50px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  text-transform: uppercase;
+  gap: 50px;
+  padding: 0px 50px 50px 50px;
 }
 
 .cover__description-title {
-
-    color: white;
-    letter-spacing: mixed;
-    word-spacing: 19px;
-    line-height: 28px;
-    font-weight: 400;
-    font-size: 22px;
-    
+  color: white;
+  letter-spacing: mixed;
+  word-spacing: 19px;
+  line-height: 28px;
+  font-weight: 400;
+  font-size: 22px;
 }
 
 .cover__button {
-    width: 256px;
-    height: 51px;
-    border: 1px solid white;
-    background-color: transparent;
-    color: white;
-    text-transform: uppercase;
-    cursor: pointer;
-    font-size: 22px;
-    
-    
+  width: 256px;
+  height: 51px;
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 22px;
 }
-.lots {
-}
+
 .lots__title {
-    padding-top: 180px;
-    padding-left: 64px;
-    font-size: 40px;
-    text-transform: uppercase;
+  padding-top: 180px;
+  padding-left: 64px;
+  font-size: 40px;
+  text-transform: uppercase;
 }
 .lots__list {
-    display: grid;
-    padding-top: 27px;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 25px;
-    padding: 27px 24px 0px 24px;
-    
+  display: grid;
+  padding-top: 27px;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 25px;
+  padding: 27px 24px 0px 24px;
 }
 
 .lot__item {
-    position: relative;
-    display: flex;
-    width: 334px;
-    height: 596px;
-    z-index: 0;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    text-transform: uppercase;
-    
-
-
+  position: relative;
+  display: flex;
+  width: 334px;
+  height: 596px;
+  z-index: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-transform: uppercase;
 }
 
 .lot__item::before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-   
-    
-
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 .lot__title {
-    position: absolute;
-    text-decoration: underline;
-    text-underline-offset: 3px;
-    top:0;
-    left: 0;
-    color: white;
-    padding: 48px 40px;
-    line-height: 1.2;
-    font-size: 15px;
-    
-
+  position: absolute;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  top: 0;
+  left: 0;
+  color: white;
+  padding: 48px 40px;
+  line-height: 1.2;
+  font-size: 15px;
 }
 .lot__description {
-    position: absolute;
-    bottom: 0;
-    color: white;
-    padding-bottom: 48px;
-    padding-left: 40px;
-    padding-right: 40px;
-    text-transform: none;
-    font-size: 20px;
-    font-weight: normal;
-    line-height: 1.2;
-
+  position: absolute;
+  bottom: 0;
+  color: white;
+  padding-bottom: 48px;
+  padding-left: 40px;
+  padding-right: 40px;
+  text-transform: none;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 1.2;
 }
 .lot__item-one {
-    background-image: url(../images/card-lot-01.jpg);
+  background-image: url(../images/card-lot-01.jpg);
 }
 
-.lot__title-one {
-}
-.lot__description-one {
-}
+
 .lot__item-two {
-    background-image: url(../images/card-lot-02.jpg);
+  background-image: url(../images/card-lot-02.jpg);
 }
 
-.lot__title-two {
-}
-.lot__description-two {
-}
+
 .lot__item-three {
-    background-image: url(../images/card-lot-03.jpg);
+  background-image: url(../images/card-lot-03.jpg);
 }
 
-.lot__title-three {
-}
-.lot__description-three {
-}
 .lots__button {
-    position: absolute;
-    padding-top: 30px;
-    padding-left: 64px;
-    text-decoration: underline;
-    text-underline-offset: 4px;
-    font-size: 20px;
-
-
+  position: absolute;
+  padding-top: 30px;
+  padding-left: 64px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  font-size: 20px;
 }
 .about {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-template-areas: 
-    "logo text";
-    padding-top: 120px;
-    padding-left: 24px;
-    padding-right: 24px;
-    gap: 72px;
-   
-   
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-areas: "logo text";
+  padding-top: 120px;
+  padding-left: 24px;
+  padding-right: 24px;
+  gap: 72px;
 }
 .about__logo {
-    grid-area: logo;
-    display: flex;
-    width: 240px;
-    height: 240px;
-    border-radius: 50%;
-    background-color: black;
-    align-items: center;
-    justify-content: center;
-    margin-left: 47px;
-    margin-top: 90px;
-    
-
-
+  grid-area: logo;
+  display: flex;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  background-color: black;
+  align-items: center;
+  justify-content: center;
+  margin-left: 47px;
+  margin-top: 90px;
 }
-.about__logo-white{
-    width: 148px;
-    height: 114px;
-
+.about__logo-white {
+  width: 148px;
+  height: 114px;
 }
+
 .about__text {
-    grid-area: text;
-    margin-top: 190px;
-    
-
+  grid-area: text;
+  margin-top: 190px;
 }
-.about__text-title{
-    font-size: 27px;
-
+.about__text-title {
+  font-size: 27px;
 }
 
 .about__text-discription {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    font-size: 20px;
-    line-height: 24px;
-    margin-top: 100px;
-    
-    
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  font-size: 20px;
+  line-height: 24px;
+  margin-top: 100px;
 }
 .footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: 
-    "contacts menu link";
-    padding: 180px 24px 115px 24px;
-    gap: 24px;
-   
-    
-   
-    
-    
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "contacts menu link";
+  padding: 180px 24px 115px 24px;
+  gap: 24px;
 }
 
 .footer ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 .contacts__footer {
-    grid-area: contacts;
-    margin-left: 25px;
-    font-size: 18px;
-    
-    
+  grid-area: contacts;
+  margin-left: 25px;
+  font-size: 18px;
 }
 .menu__footer {
-    grid-area: menu;
-    display: flex;
-    text-align: center;
-    font-size: 18px;
-    text-underline-offset: 4px;
+  grid-area: menu;
+  display: flex;
+  text-align: center;
+  font-size: 18px;
+  text-underline-offset: 4px;
 }
-    
+
 .menu__footer {
-    justify-content: center;
-    
+  justify-content: center;
 }
 .social {
-    grid-area: link;
-    
+  grid-area: link;
 }
 .social__list {
-    display: flex;
-    gap: 48px;
-    justify-content: end;
-    margin-right: 25px;
-
+  display: flex;
+  gap: 48px;
+  justify-content: end;
+  margin-right: 25px;
 }
 
 .social__link {
-    display: flex;
-    width: 48px;
-    height: 48px ;
-    
+  display: flex;
+  width: 48px;
+  height: 48px;
 }
