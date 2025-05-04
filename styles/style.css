@@ -262,11 +262,9 @@
   text-align: center;
   font-size: 18px;
   text-underline-offset: 4px;
-}
-
-.menu__footer {
   justify-content: center;
 }
+
 .social {
   grid-area: link;
 }
