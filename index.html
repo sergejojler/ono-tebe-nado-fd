@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="./fonts/fonts.css" rel="stylesheet" />
-    <link href="./styles/global.css" rel="stylesheet" />
-    <link href="./styles/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
     <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
   </head>
   <body>
@@ -14,46 +14,39 @@
       <nav class="header__menu">
         <ul class="header__menu-list">
           <li>
-            <a class="header__menu-link header__menu-link-active" href="#/"
+            <a class="header__menu-link header__menu-link-active" href="#"
               >главная</a
             >
           </li>
-          <li><a class="header__menu-link" href="#/">посмотреть лоты</a></li>
-          <li><a class="header__menu-link" href="#/">об аукционе</a></li>
+          <li><a class="header__menu-link" href="#">посмотреть лоты</a></li>
+          <li><a class="header__menu-link" href="#">об аукционе</a></li>
         </ul>
       </nav>
 
-      <div class="logo">
-        <a class="header__logo-link">
-          <img class="header__logo" src="images/logo-black.svg" alt="Логотип" />
-        </a>
-      </div>
+      <a class="header__logo-link">
+        <img
+          class="header__logo"
+          src="images/logo-black.svg"
+          alt="Логотип сайта"
+        />
+      </a>
 
-      <address class="contacts">
-        <ul class="contacts__list">
-          <li>
-            <a class="address__link" href="tel:+99995555555">+9 999 555 5555</a>
-          </li>
-          <li>
-            <a class="address__link" href="mailto:info@sobaka.ge"
-              >info@sobaka.ge</a
-            >
-          </li>
-          <li>
-            <a class="address__link address__link-maps"
-              >наб. Принсенграхт 263-265, Амстердам</a
-            >
-          </li>
-        </ul>
+      <address class="address header__adress">
+        <a class="address__link" href="tel:+99995555555">+9 999 555 5555</a>
+        <a class="address__link" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+        <p class="address__link address__link-maps">
+          наб. Принсенграхт 263- 265, Амстердам
+        </p>
       </address>
     </header>
 
     <main>
-      <section class="cover overlay">
+      <section class="cover">
+        <div class="overlay"></div>
         <h1 class="cover__title">
-          <span class="cover__title-ono">ОНО</span>
-          <span class="cover__title-tebe">ТЕБЕ</span>
-          <span class="cover__title-nado">НАДО</span>
+          <span class="cover__title-ono cover__title-text">ОНО</span>
+          <span class="cover__title-tebe cover__title-text">ТЕБЕ</span>
+          <span class="cover__title-nado cover__title-text">НАДО</span>
         </h1>
 
         <div class="cover__description">
@@ -69,7 +62,8 @@
         <ul class="lots__list">
           <li>
             <a href="#" class="lot__link">
-              <article class="lot__item overlay lot__cinema">
+              <article class="lot__item lot__cinema">
+                <div class="overlay"></div>
                 <h3 class="lot__title">
                   Фильм режиссёра, который бросил киношколу
                 </h3>
@@ -84,7 +78,8 @@
 
           <li>
             <a href="#" class="lot__link">
-              <article class="lot__item overlay lot__book">
+              <article class="lot__item lot__book">
+                <div class="overlay"></div>
                 <h3 class="lot__title">
                   Книга, где описан один скучный день из жизни рекламного агента
                 </h3>
@@ -102,7 +97,8 @@
 
           <li>
             <a href="#" class="lot__link">
-              <article class="lot__item overlay lot__picture">
+              <article class="lot__item lot__picture">
+                <div class="overlay"></div>
                 <h3 class="lot__title">
                   Картина, которую повторит даже 5-летний сын маминой подруги
                 </h3>
@@ -125,7 +121,7 @@
           <img
             class="about__logo-white"
             src="./images/logo-white.svg"
-            alt="logo-white"
+            alt="Логотип"
           />
         </div>
 
@@ -157,51 +153,41 @@
     </main>
 
     <footer class="footer">
-      <address class="contacts__footer contacts">
-        <ul>
-          <li>
-            <a class="address__link" href="tel:+99995555555">+9 999 555 5555</a>
-          </li>
-          <li>
-            <a class="address__link" href="mailto:info@sobaka.ge"
-              >info@sobaka.ge</a
-            >
-          </li>
-          <li>
-            <a class="address__link address__link-maps"
-              >наб. Принсенграхт 263-265, Амстердам</a
-            >
-          </li>
-        </ul>
+      <address class="address">
+        <a class="address__link" href="tel:+99995555555">+9 999 555 5555</a>
+        <a class="address__link" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+        <p class="address__link address__link-maps">
+          наб. Принсенграхт 263-265, Амстердам
+        </p>
       </address>
 
-      <div class="menu__footer">
-        <ul>
-          <li><a href="#/">главная</a></li>
-          <li><a href="#/">посмотреть лоты</a></li>
-          <li><a href="#/">об аукционе</a></li>
+      <!-- <div class="menu__footer"> -->
+      <nav>
+        <ul class="menu__footer">
+          <li><a href="#">главная</a></li>
+          <li><a href="#">посмотреть лоты</a></li>
+          <li><a href="#">об аукционе</a></li>
         </ul>
-      </div>
+        <!-- </div> -->
+      </nav>
 
-      <div class="social">
-        <ul class="social__list">
-          <li>
-            <a class="social__link" href="#/"
-              ><img src="./images/yt.svg" alt="youtube"
-            /></a>
-          </li>
-          <li>
-            <a class="social__link" href="#/"
-              ><img src="./images/vk.svg" alt="vkontakte"
-            /></a>
-          </li>
-          <li>
-            <a class="social__link" href="#/"
-              ><img src="./images/pinterest.svg" alt="pinterest"
-            /></a>
-          </li>
-        </ul>
-      </div>
+      <ul class="social__list">
+        <li>
+          <a class="social__link" href="#"
+            ><img src="./images/yt.svg" href="#" alt="youtube"
+          /></a>
+        </li>
+        <li>
+          <a class="social__link" href="#"
+            ><img src="./images/vk.svg" href="#" alt="vkontakte"
+          /></a>
+        </li>
+        <li>
+          <a class="social__link" href="#"
+            ><img src="./images/pinterest.svg" href="#" alt="pinterest"
+          /></a>
+        </li>
+      </ul>
     </footer>
   </body>
 </html>
